@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        input,
+        select {
+            display: block;
+            margin: 15px;
+            width: 60%;
+            margin: auto;
+            margin: 20px;
+            padding: 15px;
+            background-color: transparent;
+            border: 1px solid #FFC5C5;
+            color: white;
+        }
+        
+        input:hover {
+            box-shadow: 0px 0px 15px #FFC5C5;
+        }
+        
+        select {
+            display: block;
+            width: 60%;
+            margin: auto;
+            margin: 20px;
+            color: gray;
+            padding: 10px;
+        }
+        
+        select:hover {
+            box-shadow: 0px 0px 15px #FFC5C5;
+        }
+        
+        .form {
+            width: 60%;
+            margin: auto;
+            background-color: black;
+            padding: 20px 50px;
+            color: white;
+        }
+        
+        h2 {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        hr {
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action id="student">
+        <div class="form">
+            <h2>Hire A New Employee</h2>
+            <input type="text" placeholder="name" id="name">
+
+
+
+            <select name="" id="JobRole">
+                <option value="font end devloper">font end devloper</option>
+                <option value="back end devloper">back end devloper</option>
+                <option value="androd devloper">androd devloper</option>
+               
+            </select>
+            <select name="" id="Department">
+                <option value="Department 1">Department 1</option>
+                <option value="Department 2">Department 2</option>
+                <option value="Department 3">Department 3</option>
+               
+            </select>
+            <input type="number" placeholder="Salary" id="Salary">
+
+
+            <input type="text" placeholder="Email" id="Email">
+
+            <input type="number" placeholder="Work Experience" id="Experience">
+
+            <input type="submit" value="Hire" style="color:gray">
+        </div>
+    </form>
+    <hr>
+
+    <table border="1px splid pink" style="margin-top: 20px;" cellspacing="10px" cellpadding="10px">
+        <thead>
+
+            <tr>
+                <th>name</th>
+                <th>Job Role</th>
+                <th>Department</th>
+                <th>Salary</th>
+                <th>Email</th>
+                <th>work Experience</th>
+
+                <th> Role Type</th>
+                <th>final employees </th>
+
+
+
+
+            </tr>
+
+        </thead>
+        <tbody id="data"> </tbody>
+
+        <div id="totals"></div>
+    </table>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
